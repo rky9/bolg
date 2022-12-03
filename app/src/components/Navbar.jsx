@@ -7,11 +7,13 @@ import {
   InputBase,
   Badge,
   Avatar,
+  Menu,
+  MenuItem,
 } from "@mui/material";
-import Pets from "@mui/icons-material/Pets";
+import { Pets } from "@mui/icons-material";
 import Mail from "@mui/icons-material/Mail";
 import Notification from "@mui/icons-material/Notifications";
-import React from "react";
+import React, { useState } from "react";
 
 const StyleTdToolbar = styled(Toolbar)({
   display: "flex",
@@ -41,11 +43,12 @@ const UserBox = styled(Box)(({ theme }) => ({
   },
 }));
 export const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <AppBar position="sticky">
       <StyleTdToolbar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          LAMA DEV
+          Be Social
         </Typography>
 
         <Pets sx={{ display: { xs: "block", sm: "none" } }} />
@@ -59,13 +62,29 @@ export const Navbar = () => {
           <Badge badgeContent={4} color="error">
             <Notification />
           </Badge>
-          <Avatar sx={{ width: 30, height: 30 }} />
+          <Avatar
+            onClick={(e) => setOpen(true)}
+            sx={{ width: 30, height: 30 }}
+          />
         </Icons>
-        <UserBox>
+        <UserBox onClick={(e) => setOpen(true)}>
           <Avatar sx={{ width: 30, height: 30 }} />
           <Typography variant="span">Rajesh</Typography>
         </UserBox>
       </StyleTdToolbar>
+      <Menu
+        id="basic-menu"
+        open={open}
+        onClose={(e) => setOpen(false)}
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+        MenuListProps={{
+          "aria-labelledby": "basic-button",
+        }}
+      >
+        <MenuItem>Profile</MenuItem>
+        <MenuItem>My account</MenuItem>
+        <MenuItem>Logout</MenuItem>
+      </Menu>
     </AppBar>
   );
 };
