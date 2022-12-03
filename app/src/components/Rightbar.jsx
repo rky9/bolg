@@ -6,7 +6,11 @@ import LatestConversation from "./LatestConversation";
 
 export const Rightbar = () => {
   return (
-    <Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+    <Box
+      flex={2}
+      p={2}
+      sx={{ display: { xs: "none", sm: "block" }, background: "#f0f2f5" }}
+    >
       <Box position="fixed" width={300} mt={2}>
         <Typography variant="h6" fontWeight={100}>
           Online

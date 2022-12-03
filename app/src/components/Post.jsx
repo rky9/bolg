@@ -36,7 +36,7 @@ export default function () {
         <CardMedia
           component="img"
           height="200"
-          image="https://media-exp1.licdn.com/dms/image/sync/D4D18AQFxodJnGMovTA/companyUpdate-article-image-shrink_627_1200/0/1666654116963/SQAUREAWARENESSIMAGE1200x1200png?e=1672876800&v=beta&t=E2wis_fvnCvb377dLAjtv3S8FRMjsvRLEhMkueUSevc"
+          image="https://media-exp1.licdn.com/dms/image/sync/C4D27AQEx146DtAsggw/articleshare-shrink_800/0/1669965276169?e=1670702400&v=beta&t=_QRP2NbW-3TG9dW8X7GlbxPCC8Vvr8_OkDGjvYLzh48"
           alt="Paella dish"
         />
         <CardContent>

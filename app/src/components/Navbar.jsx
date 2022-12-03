@@ -21,7 +21,7 @@ const StyleTdToolbar = styled(Toolbar)({
 });
 
 const Search = styled("div")(({ theme }) => ({
-  backgroundColor: "#ffffff",
+  backgroundColor: "#f0f2f5",
   padding: "0 10px",
   borderRadius: theme.shape.borderRadius,
   width: "40%",

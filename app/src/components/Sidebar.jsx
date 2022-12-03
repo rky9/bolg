@@ -21,7 +21,11 @@ import {
 } from "@mui/icons-material";
 export const Sidebar = () => {
   return (
-    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+    <Box
+      flex={1}
+      p={2}
+      sx={{ display: { xs: "none", sm: "block" }, background: "#f0f2f5" }}
+    >
       <Box position="fixed">
         <List>
           <ListItem disablePadding>
