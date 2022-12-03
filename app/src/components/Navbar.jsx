@@ -6,9 +6,11 @@ import {
   Box,
   InputBase,
   Badge,
+  Avatar,
 } from "@mui/material";
 import Pets from "@mui/icons-material/Pets";
 import Mail from "@mui/icons-material/Mail";
+import Notification from "@mui/icons-material/Notifications";
 import React from "react";
 
 const StyleTdToolbar = styled(Toolbar)({
@@ -22,7 +24,22 @@ const Search = styled("div")(({ theme }) => ({
   borderRadius: theme.shape.borderRadius,
   width: "40%",
 }));
-const Icons = styled(Box)(({ theme }) => ({}));
+const Icons = styled(Box)(({ theme }) => ({
+  display: "none",
+  alignItems: "center",
+  gap: "20px",
+  [theme.breakpoints.up("sm")]: {
+    display: "flex",
+  },
+}));
+const UserBox = styled(Box)(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  gap: "10px",
+  [theme.breakpoints.up("sm")]: {
+    display: "none",
+  },
+}));
 export const Navbar = () => {
   return (
     <AppBar position="sticky">
@@ -39,7 +56,15 @@ export const Navbar = () => {
           <Badge badgeContent={4} color="error">
             <Mail />
           </Badge>
+          <Badge badgeContent={4} color="error">
+            <Notification />
+          </Badge>
+          <Avatar sx={{ width: 30, height: 30 }} />
         </Icons>
+        <UserBox>
+          <Avatar sx={{ width: 30, height: 30 }} />
+          <Typography variant="span">Rajesh</Typography>
+        </UserBox>
       </StyleTdToolbar>
     </AppBar>
   );
