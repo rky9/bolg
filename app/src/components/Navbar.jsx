@@ -48,7 +48,7 @@ export const Navbar = () => {
     <AppBar position="sticky">
       <StyleTdToolbar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          Be Social
+          Blog
         </Typography>
 
         <Pets sx={{ display: { xs: "block", sm: "none" } }} />
