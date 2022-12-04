@@ -8,7 +8,9 @@ import Add from "./components/Add";
 
 function App() {
   const [mode, setMode] = useState("light");
-  const darkTheme = createTheme({ palette: { mode: mode } });
+  const darkTheme = createTheme({
+    palette: { mode: mode },
+  });
   return (
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor={"background.default"} color={"text.primary"}>
