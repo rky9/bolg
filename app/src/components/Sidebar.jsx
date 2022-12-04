@@ -19,12 +19,14 @@ import {
   AccountBox,
   ModeNight,
 } from "@mui/icons-material";
-export const Sidebar = () => {
+export const Sidebar = ({ mode, setMode }) => {
   return (
     <Box
       flex={1}
       p={2}
-      sx={{ display: { xs: "none", sm: "block" }, background: "#f0f2f5" }}
+      sx={{ display: { xs: "none", sm: "block" } }}
+      bgcolor={"background.default"}
+      color={"text.primary"}
     >
       <Box position="fixed">
         <List>
@@ -89,7 +91,9 @@ export const Sidebar = () => {
               <ListItemIcon>
                 <ModeNight />
               </ListItemIcon>
-              <Switch />
+              <Switch
+                onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+              />
             </ListItemButton>
           </ListItem>
         </List>

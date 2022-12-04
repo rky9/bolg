@@ -9,7 +9,9 @@ export const Rightbar = () => {
     <Box
       flex={2}
       p={2}
-      sx={{ display: { xs: "none", sm: "block" }, background: "#f0f2f5" }}
+      sx={{ display: { xs: "none", sm: "block" } }}
+      bgcolor={"background.default"}
+      color={"text.primary"}
     >
       <Box position="fixed" width={300} mt={2}>
         <Typography variant="h6" fontWeight={100}>
