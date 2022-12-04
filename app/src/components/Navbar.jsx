@@ -65,6 +65,7 @@ export const Navbar = () => {
           <Avatar
             onClick={(e) => setOpen(true)}
             sx={{ width: 30, height: 30 }}
+            src="https://media-exp1.licdn.com/dms/image/D5603AQHg-sLSJOhRCA/profile-displayphoto-shrink_100_100/0/1669570336505?e=1675900800&v=beta&t=LE6LRZTyYPIVUpeJidj-4Kg4Jj6oA_-i6qpomr22Cx4"
           />
         </Icons>
         <UserBox onClick={(e) => setOpen(true)}>
