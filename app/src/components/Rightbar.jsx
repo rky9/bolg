@@ -23,7 +23,7 @@ export const Rightbar = () => {
         </Typography>
         <Latestphotos />
         <Typography variant="h6" fontWeight={100}>
-          Latest Concersations
+          Latest Conversations
         </Typography>
         <LatestConversation />
       </Box>
