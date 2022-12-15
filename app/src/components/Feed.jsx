@@ -1,16 +1,13 @@
-import React from "react";
 import { Box } from "@mui/material";
-import Post from "./Post";
+import React from "react";
+import Card from "./Card";
+
 export const Feed = () => {
   return (
-    <Box flex={4} p={2}>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+    <Box flex={9} p={2}>
+      
+      <Card />
+     
     </Box>
   );
 };

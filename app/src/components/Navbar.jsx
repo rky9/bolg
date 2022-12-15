@@ -1,18 +1,11 @@
-import {
-  AppBar,
-  Toolbar,
-  styled,
-  Typography,
-  Box,
-  InputBase,
-  Badge,
-  Avatar,
-  Menu,
-  MenuItem,
-} from "@mui/material";
 import { Pets } from "@mui/icons-material";
 import Mail from "@mui/icons-material/Mail";
 import Notification from "@mui/icons-material/Notifications";
+import {
+  AppBar, Avatar, Badge, Box,
+  InputBase, Menu,
+  MenuItem, styled, Toolbar, Typography
+} from "@mui/material";
 import React, { useState } from "react";
 
 const StyleTdToolbar = styled(Toolbar)({
@@ -48,7 +41,7 @@ export const Navbar = () => {
     <AppBar position="sticky">
       <StyleTdToolbar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          Social
+          Dashboard
         </Typography>
 
         <Pets sx={{ display: { xs: "block", sm: "none" } }} />

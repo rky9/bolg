@@ -1,9 +1,9 @@
-import * as React from "react";
-import { Fab, styled, Tooltip } from "@mui/material";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
-import Box from "@mui/material/Box";
 import { Add as AddIcon } from "@mui/icons-material";
+import { Fab, styled, Tooltip } from "@mui/material";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Typography from "@mui/material/Typography";
+import * as React from "react";
 
 const StyledModal = styled(Modal)({
   display: "flex",
@@ -35,7 +35,7 @@ export default function Add() {
       >
         <Box width={400} height={280} bgcolor="#fff" p={3} borderRadius={5}>
           <Typography variant="h6" color="#ccc">
-            Create Post
+            Title
           </Typography>
         </Box>
       </StyledModal>

@@ -1,23 +1,21 @@
-import React from "react";
+import Favorite from "@mui/icons-material/Favorite";
+import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
+import ShareIcon from "@mui/icons-material/Share";
 import {
-  Avatar,
-  Box,
-  Card,
+  Avatar, Card,
   CardContent,
   CardHeader,
   CardMedia,
   Checkbox,
   IconButton,
-  Typography,
+  Typography
 } from "@mui/material";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
-import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
-import Favorite from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
 import CardActions from "@mui/material/CardActions";
+import React from "react";
 export default function () {
   return (
-    <div>
+    <>
       <Card sx={{ margin: "5px" }}>
         <CardHeader
           avatar={
@@ -62,6 +60,6 @@ export default function () {
           </IconButton>
         </CardActions>
       </Card>
-    </div>
+    </>
   );
 }
